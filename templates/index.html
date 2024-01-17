@@ -115,10 +115,10 @@
                 {% comment %} <button class="boton boton-anterior">Anterior</button>
                 <button class="boton">Siguiente</button> {% endcomment %}
                 {% if posts.has_previous %}
-                       <a href="?page={{ posts.previous_page_number }}{% if request.GET.search %}&q={{ request.GET.search }}{% endif %}" class="boton boton-anterior">Anterior</a>
+                       <a href="?page={{ posts.previous_page_number }}{% if request.GET.search %}&q={{ request.GET.search }}{% endif %}" class="boton boton-anterior">Previous</a>
                 {% endif %}
                 {% if posts.has_next %}
-                       <a href="?page={{ posts.next_page_number }}{% if request.GET.search %}&q={{ request.GET.search }}{% endif %}" class="boton">Siguiente</a>
+                       <a href="?page={{ posts.next_page_number }}{% if request.GET.search %}&q={{ request.GET.search }}{% endif %}" class="boton">Next</a>
                 {% endif %}
                 </div>
             </div>
